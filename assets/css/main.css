@@ -1,0 +1,208 @@
+html{
+  /* background-image: url("../images/background.png"); */
+  background: #C8DFAC;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0px;
+  padding: 0px;
+}
+header,
+footer{
+  height: 50px;
+/* text-align: center;
+font-size: 25px;
+font-family: 'VT323', monospace;
+background-color: rgba(129, 163, 161, 1); */
+}
+body{
+  margin: 0 auto;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grid-wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0px 149.7px 149.7px 149.7px 149.7px 149.7px 149.7px 0px;
+  grid-template-rows: 149.7px 149.7px 149.7px 149.7px 149.7px 149.7px;
+  grid-gap: 1vw;
+  grid-template-areas: 
+  ". one one two two seven t-three ."
+  ". one one t-one t-two seven t-four ."
+  ". t-five t-six three three three eleven ."
+  ". t-seven t-eight ten four four eleven ."
+  ". six six ten four four t-nine ."
+  ". eight eight eight t-ten nine nine .";
+}
+
+.one {
+  background-color: rgba(244, 170, 96, 0.6);
+  grid-area: one; 
+  background-image: url("../images/imageOfMe.jpg");
+  background-size: 100%;
+  /* background-position: 80%; */
+}
+
+.two {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-area: two; 
+  overflow: hidden;
+  padding: 0px 5px 0px 5px;
+}
+.two:hover{
+  background-color: rgba(129, 163, 161, .85);
+  overflow-y: scroll;
+}::-webkit-scrollbar {
+  background: transparent; /* make scrollbar transparent */
+}
+
+.t-one {
+  background-color: rgba(129, 163, 161, 1);
+  grid-area: t-one; 
+  /* border: 1px solid yellow; */
+  background-image: url("../images/jsLogo.png");
+  background-size: 100%;
+  }
+
+.t-two {
+  background-color: #5299D1;
+  grid-area: t-two; 
+  /* border: 1px solid orange; */
+  background-image: url("../images/cssLogo.png");
+  background-size: 100%;
+  }
+
+.seven {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-area: seven; 
+  }
+
+.t-three {
+  background-color: rgb(46, 146, 0);
+  grid-area: t-three; 
+  background-image: url("../images/nodejsLogo.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  }
+
+.t-four {
+  background-color: rgba(0, 59, 10, 0.829);
+  grid-area: t-four; 
+  /* border: 1px solid darkkhaki; */
+  background-image: url("../images/mongodbLogo.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  }
+
+.t-five {
+  grid-area: t-five; 
+  background-image: url("../images/linkedinLogo.png");
+  background-size: 100%;
+  }
+
+.t-six {
+  background-color: rgba(0, 0, 0, 1);  
+  grid-area: t-six; 
+  background-image: url("../images/githubLogo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  }
+
+.three {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-area: three; 
+  }
+
+.eleven {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-area: eleven; 
+  }
+
+.t-seven {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-area: t-seven; 
+  background-image: url("../images/youtubeLogo.png");
+  background-size: 100%;
+  }
+
+.t-eight {
+  grid-area: t-eight; 
+  background-image: url("../images/twitterLogo.png");
+  background-size: 100%;
+  }
+
+.ten {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-area: ten; 
+  }
+
+.four {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-area: four; 
+  }
+
+.six {
+  background-color: #FF9009;
+  grid-area: six; 
+  }
+
+.t-nine {
+  background-color: white;
+  grid-area: t-nine; 
+  background-image: url("../images/mysqlLogo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  }
+
+.eight {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-area: eight; 
+  }
+
+.t-ten {
+  background-color: #343434;
+  grid-area: t-ten; 
+  background-image: url("../images/mernLogo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  }
+
+.nine {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-area: nine; 
+  }
+
+/* .comments{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 127px;
+  right: 20px;
+  width: 25%;
+  max-height: 930px;
+  padding: 20px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  overflow: hidden;
+}
+.comments:hover{
+  background: rgba(0, 0, 0, 0.85);
+  overflow-y: scroll;
+}::-webkit-scrollbar {
+  background: transparent; /* make scrollbar transparent 
+} */
+
+.bb{
+  box-shadow: 5px 5px 25px 1px #585858;
+}
+
+  
